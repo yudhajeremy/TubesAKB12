@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/wallpaper_sea_things"
+    >
+    <LinearLayout
+        android:id="@+id/pitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/layout_text"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pitch"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_pitch"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+        <SeekBar
+            android:id="@+id/seek_bar_pitch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_pitch"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+        <SeekBar
+            android:id="@+id/seek_bar_speed"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/layout_text">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Text"
+            android:textColorHint="@android:color/darker_gray"
+            android:paddingStart="55dp"
+            android:background="@drawable/bg_edttext"
+            android:paddingEnd="60dp"/>
+        <ImageView
+          android:id="@+id/img_send"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_send"
+          android:layout_alignParentRight="true"
+          android:paddingEnd="10dp"/>
+
+        <Button
+            android:id="@+id/button_speak"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/transparent"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_add"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <Button
+            android:id="@+id/button_add_note"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:background="@android:color/transparent"/>
+
+
+    </RelativeLayout>
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recycler_view"
+               android:layout_above="@id/pitch"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               />
+
+
+</RelativeLayout>
+
+<!--
+    ic_send credit by : sylverarts
+    background support by Zedge.net
+-->

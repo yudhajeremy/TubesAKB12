@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Emit</string>
+    <string name="moto">Speak UP!!!</string>
+    <string name="setting">SETTINGS</string>
+    <string name="tambah">Tambahkan Ekspresi</string>
+    <string name="pitch">Pitch</string>
+    <string name="speed">Speed</string>
+    <string name="what">What You Can Do</string>
+    <string name="number_1">1. You can text what you want to say and click the send icons to let Emit speak for you  </string>
+    <string name="number_2">2. You can adjust pitch and speed voice as you like</string>
+    <string name="number_3">3. You can add a new note by click the add icon </string>
+    <string name="number_4">4. You can edit your note by clicking the note you want to edit</string>
+    <string name="number_5">5. You can delete your note by swiping it to rigth or left</string>
+    <string name="number_6">6. You can copy the note description by holding the note for easy acces to what you want to say </string>
+    <string name="number_7">7. You can delete all note you create by click the three dot icon above and select delete all note</string>
+</resources>

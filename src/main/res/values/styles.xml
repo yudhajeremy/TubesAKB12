@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMain</item>
+        <item name="colorPrimaryDark">@color/colorMain</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="android:TextAppearance">
+
+        <item name="android:fontFamily">@font/confetti_stream</item>
+        <item name="android:textColor">@color/colorSplash</item>
+        <item name="android:textSize">24dp</item>
+
+    </style>
+
+</resources>
